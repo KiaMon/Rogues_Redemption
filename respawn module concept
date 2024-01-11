@@ -1,0 +1,8 @@
+# concept for the respawn module
+# does not work currently, according to chatGPT this is because the original code "deletes" the 1 every time the player moves, triggering the respawn every single time
+# not sure how to fix but I think something needs to be done about how the 1 is replaced when the player moves...
+
+  if (!(any(map == 1))) {
+    cat("I'm back home. My head hurts. What happened?\n")
+    map[1,1] <- 1
+  }
